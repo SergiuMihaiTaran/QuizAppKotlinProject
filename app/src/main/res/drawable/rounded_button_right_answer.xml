@@ -1,0 +1,11 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <corners android:radius="16dp" /> <!-- Keep the rounded corners -->
+
+    <solid android:color="@color/green_correct_answer" /> <!-- Green background when correct -->
+
+    <stroke
+        android:width="2dp"
+        android:color="@color/white_gray_for_buttons" /> <!-- Keep the border -->
+</shape>

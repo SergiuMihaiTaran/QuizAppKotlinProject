@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="login_button">Login</string>
+    <string name="signUpWarning">Don\'t have an account?Sign In!</string>
+    <string name="LoginText">Log In:</string>
+    <string name="play_button">Play</string>
+    <string name="next">Next Question</string>
+    <string name="back_to_main_menu">Back to main menu</string>
+    <string name="finish_quiz">Finish Quiz</string>
+    <string name="stats">Stats</string>
+    <string name="create_quiz">Create quiz</string>
+    <string name="quiz_settings">Quiz Settings</string>
+    <string name="number_of_questions">Number Of Questions:</string>
+</resources>
