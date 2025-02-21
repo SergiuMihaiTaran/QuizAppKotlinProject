@@ -11,4 +11,9 @@
     <string name="create_quiz">Create quiz</string>
     <string name="quiz_settings">Quiz Settings</string>
     <string name="number_of_questions">Number Of Questions:</string>
+    <string name="main_menu"> main menu </string>
+    <string name="enter_title">Enter your quiz title</string>
+    <string name="enter_description">Enter a description for your quiz (optional)</string>
+    <string name="question_text">Question Text:</string>
+    <string name="answers">Answers:</string>
 </resources>

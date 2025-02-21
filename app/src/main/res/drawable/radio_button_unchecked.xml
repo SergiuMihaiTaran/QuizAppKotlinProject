@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:width="32dp" android:height="32dp"/> <!-- Change size here -->
+    <solid android:color="@color/backgroud_color"/>
+    <stroke android:width="4dp" android:color="@color/white_gray_for_buttons"/>
+    <corners android:radius="16dp"/>
+</shape>
