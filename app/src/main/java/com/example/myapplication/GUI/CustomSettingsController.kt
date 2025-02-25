@@ -36,7 +36,7 @@ class CustomSettingsController:ComponentActivity() {
                 startActivity(it)}
         }
         createQuizButton.setOnClickListener {
-            val intent = Intent(this, addQuestionController::class.java).apply {
+            val intent = Intent(this, AddQuestionController::class.java).apply {
                 putExtra("QUESTIONS_NUMBER", seekBar.progress + 1)
                 putExtra("TITLE", editTextTitle.text.toString())
                 putExtra("DESCRIPTION", editTextDescription.text.toString())

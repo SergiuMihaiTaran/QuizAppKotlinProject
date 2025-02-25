@@ -113,7 +113,7 @@
         android:maxLines="4"
         android:minLines="2"
         android:padding="12dp"
-        android:textAlignment="center"
+
         android:textColor="@color/white_gray_for_buttons"
         android:textColorHint="@color/white_gray_for_buttons"
         android:textSize="18sp"

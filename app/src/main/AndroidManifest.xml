@@ -36,7 +36,7 @@
         <activity android:name=".GUI.CustomSettingsController"
             android:theme="@style/Theme.MyApplication">
         </activity>
-        <activity android:name=".GUI.addQuestionController"
+        <activity android:name=".GUI.AddQuestionController"
             android:theme="@style/Theme.MyApplication">
         </activity>
     </application>

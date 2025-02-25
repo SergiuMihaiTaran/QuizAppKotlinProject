@@ -8,6 +8,20 @@
     android:background="@color/backgroud_color">
 
     <TextView
+        android:id="@+id/errorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/please_enter_in_all_fields"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/questionNumberText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,10 +38,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.957" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/questionText"
@@ -48,8 +61,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.091" />
+        app:layout_constraintTop_toBottomOf="@+id/errorText"
+        app:layout_constraintVertical_bias="0.029" />
 
     <TextView
         android:id="@+id/AnswersText"
@@ -74,14 +87,17 @@
 
     <EditText
         android:id="@+id/questionTextEdit"
-        android:layout_width="match_parent"
-        android:layout_height="101dp"
+        android:layout_width="406dp"
+        android:layout_height="113dp"
         android:layout_marginTop="132dp"
-        android:autofillHints="Quiz Title"
+        android:autofillHints="Quiz Text"
         android:background="@drawable/rounded_button"
-        android:inputType="text"
+        android:inputType="textMultiLine"
+
         android:letterSpacing="0.05"
         android:maxLength="255"
+        android:maxLines="4"
+        android:minLines="2"
         android:padding="12dp"
         android:textAlignment="center"
         android:textColor="@color/white_gray_for_buttons"
@@ -188,8 +204,8 @@
         android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginTop="9dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/questionNumberText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.557"
@@ -201,7 +217,7 @@
         <RadioButton
             android:id="@+id/radioButton1"
             android:layout_width="50dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginTop="0dp"
             android:background="@drawable/custom_radio_button"
             android:button="@drawable/rounded_button"
@@ -221,7 +237,7 @@
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="50dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginTop="23dp"
             android:background="@drawable/custom_radio_button"
             android:button="@drawable/rounded_button"
@@ -241,7 +257,7 @@
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="50dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginTop="23dp"
             android:background="@drawable/custom_radio_button"
             android:button="@drawable/rounded_button"
@@ -261,7 +277,7 @@
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="50dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginTop="23dp"
             android:background="@drawable/custom_radio_button"
             android:button="@drawable/rounded_button"
@@ -278,4 +294,20 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.592" />
     </RadioGroup>
+
+    <Button
+        android:id="@+id/nextQuestionButton"
+        android:layout_width="211dp"
+        android:layout_height="64dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/next"
+        android:textColor="@color/white_gray_for_buttons"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/questionNumberText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.998" />
 </androidx.constraintlayout.widget.ConstraintLayout>

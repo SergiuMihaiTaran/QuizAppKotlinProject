@@ -16,4 +16,5 @@
     <string name="enter_description">Enter a description for your quiz (optional)</string>
     <string name="question_text">Question Text:</string>
     <string name="answers">Answers:</string>
+    <string name="please_enter_in_all_fields">Please enter in all fields</string>
 </resources>
