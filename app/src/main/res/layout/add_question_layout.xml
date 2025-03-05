@@ -25,6 +25,7 @@
         android:id="@+id/questionNumberText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:letterSpacing="0.05"
         android:padding="12dp"
         android:shadowColor="@color/black"
@@ -36,11 +37,10 @@
         android:textColor="@color/white_gray_for_buttons"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/nextQuestionButton" />
 
     <TextView
         android:id="@+id/questionText"
@@ -48,6 +48,7 @@
         android:layout_height="wrap_content"
         android:letterSpacing="0.05"
         android:padding="12dp"
+        android:layout_marginTop="4dp"
         android:shadowColor="@color/black"
         android:shadowDx="2"
         android:shadowDy="2"
@@ -68,7 +69,7 @@
         android:id="@+id/AnswersText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="0dp"
         android:letterSpacing="0.05"
         android:padding="12dp"
         android:shadowColor="@color/black"
@@ -87,13 +88,13 @@
 
     <EditText
         android:id="@+id/questionTextEdit"
-        android:layout_width="406dp"
-        android:layout_height="113dp"
-        android:layout_marginTop="132dp"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="0dp"
         android:autofillHints="Quiz Text"
         android:background="@drawable/rounded_button"
-        android:inputType="textMultiLine"
 
+        android:inputType="textMultiLine"
         android:letterSpacing="0.05"
         android:maxLength="255"
         android:maxLines="4"
@@ -107,14 +108,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionText"
         tools:ignore="LabelFor" />
 
     <EditText
         android:id="@+id/option1Text"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="0dp"
         android:autofillHints="Quiz Title"
         android:background="@drawable/rounded_button"
         android:inputType="text"
@@ -134,7 +135,7 @@
 
     <EditText
         android:id="@+id/option2Text"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="23dp"
         android:autofillHints="Quiz Title"
@@ -156,7 +157,7 @@
 
     <EditText
         android:id="@+id/option3Text"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="23dp"
         android:autofillHints="Quiz Title"
@@ -178,7 +179,7 @@
 
     <EditText
         android:id="@+id/option4Text"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="23dp"
         android:autofillHints="Quiz Title"
@@ -192,23 +193,21 @@
         android:textColorHint="@color/white_gray_for_buttons"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/questionNumberText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/option3Text"
-        app:layout_constraintVertical_bias="0.0"
         tools:ignore="LabelFor" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="9dp"
+        android:layout_width="100dp"
+        android:layout_height="271dp"
+        android:layout_marginTop="0dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/questionNumberText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/option3Text"
         app:layout_constraintTop_toBottomOf="@+id/AnswersText"
         app:layout_constraintVertical_bias="0.0">
@@ -219,6 +218,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
             android:background="@drawable/custom_radio_button"
             android:button="@drawable/rounded_button"
             android:buttonTint="@color/white_gray_for_buttons"
@@ -229,7 +229,7 @@
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.911"
+            app:layout_constraintHorizontal_bias="1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.473" />
@@ -297,17 +297,16 @@
 
     <Button
         android:id="@+id/nextQuestionButton"
-        android:layout_width="211dp"
-        android:layout_height="64dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.5"
+        android:layout_marginTop="24dp"
         android:background="@drawable/rounded_button"
         android:text="@string/next"
         android:textColor="@color/white_gray_for_buttons"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
-
-        app:layout_constraintBottom_toTopOf="@+id/questionNumberText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.998" />
+        app:layout_constraintTop_toBottomOf="@+id/option4Text" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,6 +7,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
 import com.example.myapplication.DataBaseHelperQuiz
 import com.example.myapplication.R
+import com.google.firebase.FirebaseApp
 
 class MainActivity : ComponentActivity() {
     lateinit var startButton: Button
@@ -16,6 +17,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.start_page)
+        FirebaseApp.initializeApp(this)
         val dbHelper = DataBaseHelperQuiz(this, null)
         dbHelper.addAllQuestions()
         startButton=findViewById(R.id.play_button)

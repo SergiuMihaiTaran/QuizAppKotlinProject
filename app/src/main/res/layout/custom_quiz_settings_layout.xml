@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:letterSpacing="0.05"
         android:padding="12dp"
+        android:layout_marginTop="20dp"
         android:shadowColor="@color/black"
         android:shadowDx="2"
         android:shadowDy="2"
@@ -22,31 +23,30 @@
         android:textColor="@color/white_gray_for_buttons"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.095" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <SeekBar
         android:id="@+id/seekBar"
         android:layout_width="135dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="75dp"
         android:max="9"
         android:progress="4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toEndOf="@+id/NOQuestions"
         app:layout_constraintTop_toBottomOf="@+id/TitleText"
-        app:layout_constraintVertical_bias="0.235" />
+        app:layout_constraintVertical_bias="0.005" />
 
     <TextView
         android:id="@+id/NOQuestions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:letterSpacing="0.05"
         android:padding="12dp"
         android:shadowColor="@color/black"
@@ -63,7 +63,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TitleText"
-        app:layout_constraintVertical_bias="0.217" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/seekBarValue"
@@ -86,8 +86,9 @@
 
     <Button
         android:id="@+id/mainMenuButton"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:background="@drawable/rounded_button"
         android:text="@string/main_menu"
         android:textColor="@color/white_gray_for_buttons"
@@ -95,14 +96,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.939" />
+        app:layout_constraintTop_toBottomOf="@+id/createQuizButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.65" />
 
     <EditText
         android:id="@+id/descriptionEditText"
-        android:layout_width="400dp"
+        android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="40dp"
         android:autofillHints="Quiz Title"
@@ -127,7 +129,7 @@
 
     <EditText
         android:id="@+id/titleEditText"
-        android:layout_width="400dp"
+        android:layout_width="match_parent"
         android:layout_height="52dp"
         android:layout_marginTop="40dp"
         android:autofillHints="Quiz Title"
@@ -148,10 +150,9 @@
 
     <Button
         android:id="@+id/createQuizButton"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/rounded_button"
         android:text="@string/create_quiz"
         android:textColor="@color/white_gray_for_buttons"
@@ -159,9 +160,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.833" />
+        app:layout_constraintTop_toBottomOf="@+id/descriptionEditText"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.65" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

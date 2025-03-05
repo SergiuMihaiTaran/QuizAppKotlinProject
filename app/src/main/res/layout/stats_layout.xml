@@ -19,8 +19,8 @@
 
     <ImageView
         android:id="@+id/playedQuizesImage"
-        android:layout_width="160dp"
-        android:layout_height="140dp"
+        android:layout_width="118dp"
+        android:layout_height="111dp"
         android:layout_gravity="center"
         android:layout_marginTop="4dp"
         android:background="@drawable/circular_shape"
@@ -35,13 +35,15 @@
         android:id="@+id/checkMarkImage"
         android:layout_width="70dp"
         android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+
         android:background="@drawable/circular_shape"
         android:clipToOutline="true"
         android:scaleType="centerCrop"
         android:src="@drawable/checkmark_image"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/xMarkImage"
-        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/playedText"
         app:layout_constraintVertical_bias="0.0" />
@@ -50,7 +52,7 @@
         android:id="@+id/xMarkImage"
         android:layout_width="70dp"
         android:layout_height="80dp"
-        android:layout_marginEnd="76dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/circular_shape"
         android:clipToOutline="true"
         android:scaleType="centerCrop"
@@ -62,8 +64,8 @@
 
     <TextView
         android:id="@+id/playedText"
-        android:layout_width="240sp"
-        android:layout_height="85dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:letterSpacing="0.05"
         android:padding="12dp"
         android:shadowColor="@color/black"
@@ -84,9 +86,11 @@
 
     <TextView
         android:id="@+id/passedText"
-        android:layout_width="200dp"
-        android:layout_height="76dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:letterSpacing="0.05"
+        android:layout_marginStart="12dp"
         android:padding="12dp"
         android:shadowColor="@color/black"
         android:shadowDx="2"
@@ -98,17 +102,17 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkMarkImage"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+         />
 
     <TextView
         android:id="@+id/failedText"
-        android:layout_width="200dp"
-        android:layout_height="76dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:letterSpacing="0.05"
+        android:layout_marginEnd="12dp"
         android:padding="12dp"
         android:shadowColor="@color/black"
         android:shadowDx="2"
@@ -121,20 +125,22 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_bias="0.989"
         app:layout_constraintStart_toEndOf="@+id/passedText"
         app:layout_constraintTop_toBottomOf="@+id/xMarkImage"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.5" />
 
     <Button
         android:id="@+id/mainMenuButton"
-        android:layout_width="280dp"
-        android:layout_height="60dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/rounded_button"
         android:text="@string/back_to_main_menu"
         android:textColor="@color/white_gray_for_buttons"
         android:textSize="22sp"
         android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.65"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
